@@ -45,7 +45,7 @@ nav li{
 }
 
 /* RESPONSIVE RULES */
-@media screen and (max-width:750px){
+@media screen and (max-width:715px){
     header{
         height:200px;
     }
@@ -80,7 +80,7 @@ nav li{
 }
 
 /* RESPONSIVE RULES */
-@media screen and (max-width:750px){
+@media screen and (max-width:715px){
     .features{
         display:block;
     }
