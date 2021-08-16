@@ -57,7 +57,7 @@ nav li{
     }
 }
 /* RESPONSIVE RULES */
-@media screen and (max-width:600px){
+@media screen and (max-width:200px){
     header{
         height:150px;
     }
@@ -96,7 +96,7 @@ nav li{
     .features{
         display:block;
     }
-}@media screen and (max-width:600px){
+}@media screen and (max-width:200px){
     .features{
         display:block;
     }
