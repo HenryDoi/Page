@@ -96,7 +96,8 @@ nav li{
     .features{
         display:block;
     }
-}@media screen and (max-width:200px){
+}
+@media screen and (max-width:200px){
     .features{
         display:block;
     }
