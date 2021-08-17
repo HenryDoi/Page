@@ -25,14 +25,14 @@ header .mobile{
 }
 header .logo a {
     background-image: url("images/logo.png");
-    background-size: 300px;
+    background-size: 3000px;
     background-repeat: no-repeat;
     display:inline-block;
     height: 135px;
     position: relative;
     text-indent: -99999999px;
     top:-30px;
-    width: 300px;
+    width: 3000px;
 }
 nav ul{
     margin:0;
