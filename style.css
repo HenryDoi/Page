@@ -57,6 +57,10 @@ nav li{
     header .desktop{
         display:none;
     }
+    header .logo a{
+        top:-50px;
+        right: -13px;
+    }
 }
 .features{
     background: rgb(255, 255, 255);
