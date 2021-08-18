@@ -1,12 +1,12 @@
 body{
-    background: rgb(58, 58, 58);
+    background: rgb(78, 78, 78);
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 header{
-    background-color: black;
+    background-color: rgb(126, 126, 126);
     background-image: url("images/2.jpg");
     background-size:100%;
     background-position:center;
@@ -15,7 +15,7 @@ header{
     text-align: center;
 }
 header a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
     margin-top:40px;
@@ -25,14 +25,14 @@ header .mobile{
 }
 header .logo a {
     background-image: url("images/logo.png");
-    background-size: 3000px;
+    background-size: 300px;
     background-repeat: no-repeat;
     display:inline-block;
     height: 135px;
     position: relative;
     text-indent: -99999999px;
     top:-30px;
-    width: 3000px;
+    width: 300px;
 }
 nav ul{
     margin:0;
@@ -48,28 +48,18 @@ nav li{
 @media screen and (max-width:750px){
     header{
         height:200px;
+        font-size:13px;
     }
     header .mobile{
         display:inline-block;
-    }
-    header .desktop{
-        display:none;
-    }
-}
-/* RESPONSIVE RULES */
-@media screen and (max-width:200px){
-    header{
-        height:150px;
-    }
-    header .mobile{
-        display:inline-block;
+        font-size:13px;
     }
     header .desktop{
         display:none;
     }
 }
 .features{
-    background: white;
+    background: rgb(255, 255, 255);
     color: gray;
     padding:20px;
     display:flex;
@@ -96,16 +86,19 @@ nav li{
     .features{
         display:block;
     }
-}
-@media screen and (max-width:200px){
-    .features{
-        display:block;
+    .features figure{
+        margin:auto auto 40px auto;
     }
+}
+.content1{
+    background: rgb(159, 228, 0);
+    font-size:12px;
+    text-align: center;
 }
 footer{
     background: black;
     color:gray;
-    font-side:12px;
+    font-size:12px;
     padding:10px 20px;
     text-align:center
 }
