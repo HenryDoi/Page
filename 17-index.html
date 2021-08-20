@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header .title {
+            background: rgb(206, 206, 206);
+            width: 600px;
+            height: 200px;
+            border-radius: 15px;
+            padding-top: 60px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        header div h1 {
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.74);
+        }
+
+        header div h3 {
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0.596);
+        }
+
+        @media screen and (max-width: 750px) {
+            header .title {
+                height: 140px;
+                width: 95%;
+                padding-top: 10px;
+                margin: 10px;
+            }
+        }
+
+        section {
+            background-color: blue;
+            margin: 0px;
+        }
+
+        .fixed {
+            padding:5px;
+            background: coral;
+            border:1px solid black;
+            margin:auto;
+        }
+
+        .unit{
+            background: black;
+            text-align: center;
+        }
+
+        .unitUp {
+            border: 2px solid rgb(34, 123, 175);
+            border-radius: 10px 10px 0 0;
+            background: rgb(34, 123, 175);
+            height: 100px;
+        }
+
+        .unitDown {
+            border: 2px solid rgb(34, 123, 175);
+            border-radius: 0 0 10px 10px;
+            margin: 100px 0 0 -2px;
+            background: white;
+            height: 100px;
+        }
+
+        @media screen and (max-width:750px) {
+            div {
+                width: 105px;
+                height: 105px;
+            }
+
+            .unitUp {
+                width: 100px;
+                border: 2px solid rgb(34, 123, 175);
+                border-radius: 10px 10px 0 0;
+                background: rgb(34, 123, 175);
+                height: 50px;
+            }
+
+            .unitDown {
+                width: 100px;
+                border: 2px solid rgb(34, 123, 175);
+                border-radius: 0 0 10px 10px;
+                margin: 50px 0 0 -2px;
+                background: white;
+                height: 50px;
+            }
+        }
+        footer{
+            margin: auto;
+            width:99%;
+            height: 20px;
+            background: rgb(0, 0, 0);
+            font-size: 12px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>JavaScript</h1>
+            <h3>jQuery</h3>
+        </div>
+    </header>
+    <section>
+        <div class="fixed">
+            <div class="unit">
+                <div class="unitUp">
+                    <div class="unitDown">
+                        Hello World
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed">
+            <div class="unit1">
+                <div class="unitUp">
+                    <div class="unitDown">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed">
+            <div class="unit2">
+                <div class="unitUp">
+                    <div class="unitDown">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed">
+            <div class="unit3">
+                <div class="unitUp">
+                    <div class="unitDown">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="hide"><p id='clickme'>注意！本页面仅适配手机端,10秒后自动关闭,点我立即关闭</p></footer>
+
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $('.unit').css({
+                color: "red",
+                fontWeight: "bold",
+                opacity: "0.5"
+            })
+            $('.unit').slideUp(1000).delay(1000).slideDown(1000)
+            $('.unit').click(function () {
+                $('.unit').slideUp(1000).delay(1000).slideDown(1000)
+            })
+            $('.unit1').slideToggle(1000).delay(1000).slideToggle(1000)
+            $('.unit1').click(function () {
+                $('.unit1').slideToggle(1000).delay(1000).slideToggle(1000)
+            })
+            $('.unit3').hide(1000).delay(1000).show(1000)
+            $('.unit3').click(function () {
+                $('.unit3').hide(1000).delay(1000).show(1000)
+            })
+            $('.unit2').fadeOut(1000).delay(1000).fadeIn(1000)
+            $('.unit2').click(function () {
+                $('.unit2').fadeOut(1000).delay(1000).fadeIn(1000)
+            })
+            $("#clickme").click(function(){$("#hide").hide()})
+            $('#hide').delay(10000).fadeOut(500)
+        })
+        
+    </script>
+
+</body>
+
+</html>
